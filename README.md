@@ -1,2 +1,2 @@
-# chino-discord-bot
-Discord bot for my server
+# chino
+Mon bot discord

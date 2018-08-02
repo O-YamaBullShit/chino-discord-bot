@@ -1,0 +1,16 @@
+{
+  "name": "chino_bot",
+  "version": "1.0.2",
+  "description": "un bot discord francais",
+  "scripts":{
+    "start": "node bot.js"
+  },
+  "main": "bot.js",
+  "author": "O-Yama",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.3.2",
+    "ms": "^2.1.1",
+    "superagent": "^3.8.2"
+  }
+}
