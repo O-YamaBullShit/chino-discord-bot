@@ -33,11 +33,11 @@ module.exports.run = async (bot, message, args) => {
   if(!mutetime) return message.reply("Vous n'avez pas spécifié de durée");
 
   await(tomute.addRole(muterole.id));
-  message.reply(`<@${tomute.id}> est muet pour  ${ms(ms(mutetime))}`);
+  message.reply(`<@${tomute.id}> est muet pour  ${ms(ms(mutetime))} :(`);
 
   setTimeout(function(){
     tomute.removeRole(muterole.id);
-    message.channel.send(`<@${tomute.id}> n'es plus muet`);
+    message.channel.send(`<@${tomute.id}> n'es plus muet :)`);
   }, ms(mutetime));
 
 

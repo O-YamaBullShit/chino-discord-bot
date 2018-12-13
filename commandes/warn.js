@@ -12,9 +12,9 @@ module.exports.run = async (bot, message, args) => {
   if(wUser.hasPermission("MANAGE_MESSAGES")) return message.reply("Je ne peux pas warn cet utilisateur");
   let reason = args.join(" ").slice(22);
 
-  if(!warns[wUser.id]) warns[wUser.id] = {
-    warns: 0
-  };
+  if (!warns[wUser.id]) {
+    warns[wUser.id] = { warns: 0 };
+  }
 
   warns[wUser.id].warns++;
 

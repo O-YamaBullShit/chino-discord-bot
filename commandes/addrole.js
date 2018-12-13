@@ -2,8 +2,8 @@ const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
 
-  //!addrole @andrew Dog Person
-  if(!message.member.hasPermission("MANAGE_MEMBERS")) return message.reply("Vous n'avez pas les droits pour executer cette commande.");
+  //§addrole @mention [nom du role]
+  if (!message.member.hasPermission("ADMINISTRATOR")) return message.reply("Vous n'avez pas les droits pour executer cette commande.");
   let rMember = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0]);
   if(!rMember) return message.reply("Je ne trouve pas cet utilisateur.");
   let role = args.join(" ").slice(22);
