@@ -11,7 +11,7 @@ module.exports.run = async (bot, message, args) => {
       coins[uGive.id] = { coins: 0 };
     }
     let uCoins = coins[uGive.id].coins;
-    let uGiveAmt = args[1];
+    let uGiveAmt = args.slice(1).join(" ");
     if(!uGive) return message.reply("Veuillez spécifier un utilisateur !");
     if(!uGiveAmt) return message.reply("Veuillez spécifier un nombre s'il vous plaît.");
     // On vérifie si la somme donnée n'est pas une chaîne de caractères (ou un caractère simple) ou un nombre décimal.
