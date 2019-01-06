@@ -1,0 +1,12 @@
+{
+	"e621.net": {
+		"aliases": ["e621"],
+		"endpoint": "/post/index.json?",
+		"random": true
+	},
+	"derpibooru.org":{
+		"aliases": ["derpibooru"],
+		"endpoint": "/search.json?",
+		"random": true
+	}
+}
